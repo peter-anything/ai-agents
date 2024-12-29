@@ -17,6 +17,7 @@ Content = """
 3.严格按照字典格式进行回答,如{{"person":[{{"name":"name1","features":"features1"}},{{"name":"name2","features":"features2"}}]}}
 4.name存放这个人的姓名,features存放这个人的特征
 5.不要有多余的空格或换行符
+6.只回答字典格式
 """
 # 实例化一个ActionNode，输入对应的参数
 DIRECTORY_WRITE = ActionNode(

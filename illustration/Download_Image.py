@@ -4,7 +4,7 @@ import os
 # 下载图片
 def Download(name,url):
     r = requests.get(url)
-    folder_path = ""  # 指定文件夹路径
+    folder_path = "/Users/wangxiaobin/codes/ai-agents/illustration/output"  # 指定文件夹路径
     file_name = name  # 文件名
 
     if not os.path.exists(folder_path):

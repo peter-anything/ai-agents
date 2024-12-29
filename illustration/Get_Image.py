@@ -2,7 +2,7 @@ from metagpt.actions import Action
 from metagpt.roles.role import Role, RoleReactMode
 from zhipuai import ZhipuAI
 
-client = ZhipuAI(api_key="***")  # 这个不能给你们看
+client = ZhipuAI(api_key="f1de3f5bfb26e3bc2d20302285a41738.ZectlvqNS9vo07Yj")  # 这个不能给你们看
 
 
 # 生成图片
@@ -16,7 +16,7 @@ class WriteContentWithActionNode(Action):
         prompt = self.Prompt.format(content=content)
         print(prompt)
         response = client.images.generations(
-            model="cogview-3",  # 填写需要调用的模型名称
+            model="cogview-3-plus",  # 填写需要调用的模型名称
             prompt=prompt,
         )
         print(response.data[0].url)

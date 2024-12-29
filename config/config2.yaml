@@ -1,6 +1,4 @@
 llm:
-  api_type: 'qianfan'
-  access_key: 'a3eaddac48da426fb2fd6787048ad95a'
-  secret_key: '2943b8393135481586182715e9b389d5'
-  model: 'Qianfan-Chinese-Llama-2-7B'
-
+  api_type: 'dashscope'
+  api_key: 'XXXXXXX'
+  model: 'qwen-max'

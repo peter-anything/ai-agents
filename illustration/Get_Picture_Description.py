@@ -60,7 +60,7 @@ class Get_Picture_DescriptionActionNode(Role):
 
     def __init__(self, content: str, All_Persona: str, Current_Person: str, **kwargs):
         super().__init__(**kwargs)
-        self._init_action(Get_Picture_Description())
+        self.set_actions([Get_Picture_Description()])
         # self._init_actions([Get_Picture_Description()])
         self._set_react_mode(react_mode=RoleReactMode.BY_ORDER.value)
         self.content = content
